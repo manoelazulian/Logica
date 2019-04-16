@@ -6,3 +6,28 @@ Depois disso  calcule e mostre no console:
 a) O valor dos 10% (cota do garçom)
 b) O valor final da conta (consumo + 10%)
 c) O valor que cada cliente deve pagar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //    var consumo = Number(prompt("valor da conta"))
+        //     var clientes = Number(prompt("numero de clientes"))
+        //     console.log("O valor dos 10% do garçon: " + consumo * 0.10)
+        //     console.log("O valor final da conta é: " + (consumo + consumo * 0.10))
+        //     console.log("O valor que cada cliente deve pagar é: " + (consumo + consumo * 0.10) / clientes) 
+        var consumo = Number(prompt("valor da conta"))
+        var clientes = Number(prompt("numero de clientes"))
+        var cotaGarcon = (consumo * 0.10)
+        console.log("O valor dos 10% do garçon é: " + cotaGarcon)
+        console.log("O valor final da conta é " + (consumo + cotaGarcon))
+        console.log("O valor que cada cliente tem que pagar é: " + (consumo + cotaGarcon) / clientes)
+        </script>
+</body>
+</html>
