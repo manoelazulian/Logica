@@ -1,11 +1,5 @@
-var mensagem = document.querySelector('.mensagem');
-
-var botao = document.querySelector('.button');
-botao.addEventListener('click',function(evento){
-    evento.preventDefault()
-    
-    var email = document.querySelector('#newsInputEmail')
-    
+var email = document.querySelector('#loginInputEmail')
+var senha = document.querySelector('#loginInputPassword')   
     if (email.value == "" || email.value.length == 0){
         mensagem.textContent = 'Digite um email válido'
         return
@@ -16,7 +10,8 @@ botao.addEventListener('click',function(evento){
         mensagem.textContent = 'O email '+ email.value + 'foi cadastrado com sucesso!'
     
         console.log(email.value.indexOf('@'))
-})
+        if (senha.value.lenght >= 6){
+            returnmensagem.textContent = 'Senha inválida!'
 
-    
-    
+        }
+        
